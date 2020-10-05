@@ -18,7 +18,8 @@ int main(int argc, string argv[])
     
  
     string p = get_string("plaintext: ");
-    printf ("\nOutput: ");
+    
+    printf ("ciphertext: ");
     for (int b = 0, a = strlen(p); b < a; b++)
     {
         if (p[b] >= ' ' && p[b] <= '@')
