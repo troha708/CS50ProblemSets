@@ -20,7 +20,7 @@ int main(void)
         for (int s = n; s > 0; s--)
         {
               // Printing spaces which will shunt #'s to right in order to make left aligned triangle  
-              for (int d = 0; d < s; d++)
+              for (int d = 0; d < s - 1; d++)
             {
                  printf(" ");
 
