@@ -71,6 +71,9 @@ int main(void)
     {
         printf("Before Grade 1\n");
     }
+    
+    
+    
    
     if (g > 16)
     {
@@ -78,7 +81,7 @@ int main(void)
     }
    
     
-    else if (g > 1 || g < 17)
+    else if (g > 1 && g < 17)
     {
        printf ("Grade %i\n", g); 
     }
