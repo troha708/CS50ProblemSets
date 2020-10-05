@@ -64,9 +64,9 @@ int main(void)
     printf("Number of letters per 100 words = %f\n", a);
     printf("Number of sentences per 100 words = %f\n", b);
     
-    int g = (0.0588 * a - 0.296 * b - 15.8);
+    int g = (0.0588 * a - 0.296 * b - 15.8 + 1);
     
-    if (g > 0 || g < 17)
+    if (g > 1 || g < 17)
     {
        printf ("Grade %i\n", g); 
     }
