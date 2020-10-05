@@ -65,21 +65,25 @@ int main(void)
     printf("Number of sentences per 100 words = %f\n", b);
     
     int g = (0.0588 * a - 0.296 * b - 15.8 + 1);
+   
+   
+   if (g < 1) 
+    {
+        printf("Before Grade 1\n");
+    }
+   
+    if (g > 16)
+    {
+        printf("Grade 16+\n");
+    }
+   
     
-    if (g > 1 || g < 17)
+    else if (g > 1 || g < 17)
     {
        printf ("Grade %i\n", g); 
     }
-    else 
-    if (g < 1) 
-    {
-        printf("Before Grade 1");
-    }
-    else 
-    if (g > 16)
-    {
-        printf("Grade 16+");
-    }
+    
+    
     
 
 }
